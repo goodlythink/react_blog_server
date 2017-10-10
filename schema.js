@@ -46,6 +46,7 @@ const getPosts = () => ([
 const Post = new GraphQLObjectType({
     name: 'Post',
     fields: () => ({
+        id: { type: GraphQLString },
         title: { type: GraphQLString },
         description: { type: GraphQLString }
     })

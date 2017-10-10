@@ -7,7 +7,7 @@ const PORT = 3000;
 var app = express();
 
 app.use(
-    '/graphql',
+    '/api/graphql',
     bodyParser.json(),
     ase.graphqlExpress({ schema: myGraphQLSchema })
 );
