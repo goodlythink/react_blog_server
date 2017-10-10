@@ -9,7 +9,12 @@ var app = express();
 app.use(
     '/graphql',
     bodyParser.json(),
-    ase.graphiqlExpress({ schema: myGraphQLSchema })
+    ase.graphqlExpress({ schema: myGraphQLSchema })
+);
+
+app.use(
+    '/graphiql',
+    ase.graphiqlExpress({ endpointURL: '/graphql' })
 );
 
 app.listen(PORT);
