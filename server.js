@@ -14,7 +14,7 @@ app.use(
 
 app.use(
     '/graphiql',
-    ase.graphiqlExpress({ endpointURL: '/graphql' })
+    ase.graphiqlExpress({ endpointURL: '/api/graphql' })
 );
 
 app.listen(PORT);
